@@ -1,6 +1,6 @@
 # go-bank-payment
 
-This is unofficial client-sdk payment core host to host with conventional bank in Indonesia
+This is unofficial go-client-sdk Payment Core _host to host_ with conventional Bank in Indonesia.
 
 ## Documentation
 
