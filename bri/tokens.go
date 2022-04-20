@@ -33,6 +33,8 @@ func CreateAccessToken(opts *Option) (*bankpayment.BRIAccessToken, *bankpayment.
 
 	if opts.env == bankpayment.Development {
 		r.url = apiDevelopment
+	} else if opts.env == bankpayment.Testing {
+		r.url = apiTesting
 	}
 
 	return r.createAccessToken(context.Background())

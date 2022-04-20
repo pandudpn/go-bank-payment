@@ -16,6 +16,7 @@ func TestNewOption(t *testing.T) {
 		opts.SetAccessToken("abc")
 		opts.SetDevelopment()
 		opts.SetProduction()
+		opts.SetTesting()
 		opts.SetConsumerKey("abc")
 		opts.GetConsumerSecret()
 		opts.GetConsumerKey()

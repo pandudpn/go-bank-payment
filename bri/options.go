@@ -57,6 +57,11 @@ func (o *Option) SetProduction() {
 	o.env = bankpayment.Production
 }
 
+// SetTesting will set environment access for unit_test
+func (o *Option) SetTesting() {
+	o.env = bankpayment.Testing
+}
+
 // GetEnvironment will return an active environment
 func (o *Option) GetEnvironment() bankpayment.Environment {
 	return o.env

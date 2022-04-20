@@ -26,6 +26,8 @@ func CreateVA(param *VAParam, opts *Option) (*bankpayment.BRIVA, *bankpayment.BR
 
 	if opts.env == bankpayment.Development {
 		rq.url = apiDevelopment
+	} else if opts.env == bankpayment.Testing {
+		rq.url = apiTesting
 	}
 
 	return rq.createVa(context.Background())
